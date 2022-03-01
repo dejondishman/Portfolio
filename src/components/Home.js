@@ -3,57 +3,56 @@ import NavBar from "./NavBar";
 import Logo from "./Logo";
 import Form from "./Form";
 import LogInButton from "./LogInButton";
-//import {Link} from "react-router-dom";
+import Projects from "./Projects";
+import NewRoom from "./NewRoom"
+import "./Home.css"
+import "./NavBar.css"
+import "./Logo.css"
+
 
 export default function Home(props){
   let [headerChange, setHeaderChange] = useState(props.click)
-
-
-    
 
     const headerChangeHandler = () => {
         setHeaderChange()
         console.log(headerChange)
     }
     return (
-        <div>
+        <div className="main-home">
             <div>
-                <Logo/>
+               <Logo/>
             </div>
             
             <section> 
-                <p>this is my nav bar below</p> 
-               <NavBar/>
+                <NavBar/>
             </section>
-            
-            <div>
-                <p>THis is the beggining of the blog career of mine or perosnal prject idk yet</p>
+
+            <br></br>
+
+            {/* insert image here*/}
+            <div className="main-p">
+                <p>This is the beggining of the blog career of mine or perosnal project idk yet</p>
             </div>
 
             <section>
                 <div>
-                    {/* <Form/> */}
+                     <Form/> 
                 </div>
             </section>
-            
-           
-            
+       
             <p onClick={headerChangeHandler}>{headerChange ? "click on this it will change" : "oh wow that was cool"} </p>
                 {/* after it renders to "oh wow thats cool" how do i get it back to the original once i click again */}
                 {/* idea: create a form. when i click on the title above the form it renders a new form that matches the title */}
+            <br></br>
 
             <section>
-                <p>Projects</p>
-                <ul>
-                    <li>Pomodoro Timer</li>
-                    <li>Restaurant Reservation</li>
-                    <li>Grub Dash</li>
-                </ul>
+                <Projects/>
             </section>
-
+  
             <div>
                 <LogInButton />
             </div>
         </div>
     )
 }
+

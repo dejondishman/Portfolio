@@ -1,0 +1,18 @@
+.body{
+    margin: 0px;
+}
+
+.main-p{
+    background: red;
+    padding: 20px;
+    margin: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    width: 100%;
+}
+
+.main-home > section{
+    display: inline-block;
+    width: 100%;
+}

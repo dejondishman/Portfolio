@@ -2,6 +2,9 @@ import React from "react";
 
 export default function Logo(){
     return(
-        <logo>Logo</logo>
+        <div className="Logo">
+            <logo>Logo</logo>
+        </div>
+        
     )
 }

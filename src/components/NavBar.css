@@ -1,0 +1,13 @@
+.navBar{
+    width: 100%;
+    background: #2ddf5c;
+    padding: 8px 16px;    
+}
+
+.main-nav__item{
+    display: inline-block;
+}
+
+.navBar{
+    display: inline-block;
+}
